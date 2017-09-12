@@ -33,49 +33,7 @@ CREATE TABLE IF NOT EXISTS `auditoria` (
   `data` datetime NOT NULL,
   `url` tinytext NOT NULL,
   KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
-
---
--- Dumping data for table `auditoria`
---
-
-INSERT INTO `auditoria` (`id`, `usuario`, `usuario_nome`, `data`, `url`) VALUES
-(1, 1, 'ADMINISTRADOR', '2016-09-14 08:58:02', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(2, 2, 'REDATOR', '2016-09-14 09:06:59', 'http://localhost/git/geradoc_demo/index.php/documento'),
-(3, 2, 'REDATOR', '2016-09-14 09:07:17', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(4, 1, 'ADMINISTRADOR', '2016-09-14 09:07:42', 'http://localhost/git/geradoc_demo/index.php/documento'),
-(5, 1, 'ADMINISTRADOR', '2016-09-14 09:12:49', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(6, 1, 'ADMINISTRADOR', '2016-09-14 09:17:33', 'http://localhost/git/geradoc_demo/index.php/documento/add'),
-(7, 1, 'ADMINISTRADOR', '2016-09-14 09:17:35', 'http://localhost/git/geradoc_demo/index.php/documento/view/1'),
-(8, 1, 'ADMINISTRADOR', '2016-09-14 09:18:17', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(9, 2, 'REDATOR', '2016-09-14 09:18:35', 'http://localhost/git/geradoc_demo/index.php/documento'),
-(10, 2, 'REDATOR', '2016-09-14 09:20:48', 'http://localhost/git/geradoc_demo/index.php/documento/add'),
-(11, 2, 'REDATOR', '2016-09-14 09:20:50', 'http://localhost/git/geradoc_demo/index.php/documento/view/2'),
-(12, 2, 'REDATOR', '2016-09-14 09:21:01', 'http://localhost/git/geradoc_demo/index.php/documento/update/2'),
-(13, 2, 'REDATOR', '2016-09-14 09:21:03', 'http://localhost/git/geradoc_demo/index.php/documento/view/2'),
-(14, 2, 'REDATOR', '2016-09-14 09:21:16', 'http://localhost/git/geradoc_demo/index.php/documento/update/2'),
-(15, 2, 'REDATOR', '2016-09-14 09:21:18', 'http://localhost/git/geradoc_demo/index.php/documento/view/2'),
-(16, 2, 'REDATOR', '2016-09-14 09:21:31', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(17, 2, 'REDATOR', '2016-09-14 09:23:55', 'http://localhost/git/geradoc_demo/index.php/documento/add'),
-(18, 2, 'REDATOR', '2016-09-14 09:23:57', 'http://localhost/git/geradoc_demo/index.php/documento/view/3'),
-(19, 2, 'REDATOR', '2016-09-14 09:24:12', 'http://localhost/git/geradoc_demo/index.php/documento/update/3'),
-(20, 2, 'REDATOR', '2016-09-14 09:24:14', 'http://localhost/git/geradoc_demo/index.php/documento/view/3'),
-(21, 2, 'REDATOR', '2016-09-14 09:24:17', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(22, 2, 'REDATOR', '2016-09-14 09:24:32', 'http://localhost/git/geradoc_demo/index.php/documento/update/3'),
-(23, 2, 'REDATOR', '2016-09-14 09:24:34', 'http://localhost/git/geradoc_demo/index.php/documento/view/3'),
-(24, 2, 'REDATOR', '2016-09-14 09:24:51', 'http://localhost/git/geradoc_demo/index.php/documento/update/3'),
-(25, 2, 'REDATOR', '2016-09-14 09:24:53', 'http://localhost/git/geradoc_demo/index.php/documento/view/3'),
-(26, 2, 'REDATOR', '2016-09-14 09:25:00', 'http://localhost/git/geradoc_demo/index.php/documento/index'),
-(27, 1, 'ADMINISTRADOR', '2016-09-14 09:53:18', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/index'),
-(28, 1, 'ADMINISTRADOR', '2016-09-14 09:53:46', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/view/3'),
-(29, 1, 'ADMINISTRADOR', '2016-09-14 09:53:52', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/index'),
-(30, 1, 'ADMINISTRADOR', '2016-09-14 09:53:57', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/update_negado/1'),
-(31, 1, 'ADMINISTRADOR', '2016-09-14 09:53:59', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/index'),
-(32, 1, 'ADMINISTRADOR', '2016-09-14 09:55:55', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/view/3'),
-(33, 1, 'ADMINISTRADOR', '2016-09-14 09:55:56', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/index'),
-(34, 1, 'ADMINISTRADOR', '2016-09-14 09:55:58', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/view/1'),
-(35, 1, 'ADMINISTRADOR', '2016-09-14 09:56:00', 'http://172.17.156.150/git/geradoc_demo/index.php/documento/index'),
-(36, 1, 'ADMINISTRADOR', '2016-09-14 10:30:35', 'http://localhost/git/geradoc_demo/index.php/documento');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -108,20 +66,13 @@ INSERT INTO `cargo` (`id`, `nome`) VALUES
 
 CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `session_id` varchar(45) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
-  `ip_address` varchar(16) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
-  `user_agent` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `ip_address` varchar(45) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
+  `user_agent` varchar(120) COLLATE latin1_general_ci DEFAULT NULL,
   `last_activity` int(10) unsigned NOT NULL DEFAULT '10',
   `user_data` text COLLATE latin1_general_ci,
-  PRIMARY KEY (`session_id`)
+  PRIMARY KEY (`session_id`),
+  KEY `last_activity_idx` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Dumping data for table `ci_sessions`
---
-
-INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('0c82dc26ab085b211a7fe35f354e94c4', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36', 1473860164, ''),
-('d64397b9b15eea8450bf41924b3852e0', '172.17.156.3', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36', 1473858060, '');
 
 -- --------------------------------------------------------
 
