@@ -400,8 +400,9 @@ CREATE TABLE IF NOT EXISTS `workflow` (
   `id_recebedor` int(11) DEFAULT NULL,
   `data_envio` datetime NOT NULL,
   `data_recebimento` datetime DEFAULT NULL,
+  `data_recusa` datetime DEFAULT NULL,
   PRIMARY KEY (`id_workflow`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Dumping data for table `workflow`
