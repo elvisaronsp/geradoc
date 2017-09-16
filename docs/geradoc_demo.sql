@@ -74,6 +74,22 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
   KEY `last_activity_idx` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+
+
+--
+-- Estrutura da tabela `comentario`
+--
+
+CREATE TABLE IF NOT EXISTS `comentario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_documento` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `data` datetime DEFAULT NULL,
+  `texto` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+
 -- --------------------------------------------------------
 
 --
