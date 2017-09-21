@@ -95,9 +95,10 @@ CREATE TABLE IF NOT EXISTS `comentario` (
 --
 
 CREATE TABLE `rel_comentario_usuario` (
-  `id_rel` int(11) NOT NULL,
+  `id_rel` int(11) NOT NULL AUTO_INCREMENT,
   `id_comentario` int(11) NOT NULL,
-  `id_usuario` int(11) NOT NULL
+  `id_usuario` int(11) NOT NULL,
+   PRIMARY KEY (`id_rel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
